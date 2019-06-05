@@ -1,8 +1,8 @@
-# Titanium Turbo Template (Default)
+# Titanium Turbo Template (Next)
 
-![https://www.npmjs.com/package/@titanium/template-turbo-default](https://img.shields.io/npm/v/@titanium/template-turbo-default.png)
+![https://www.npmjs.com/package/@titanium/template-turbo-next](https://img.shields.io/npm/v/@titanium/template-turbo-next.png)
 
-> This template is based on the new project that is created when using the Titanium Mobile CLI tool, with some modifications (see below)
+> This template is based on the template @titanium/template-turbo-default with some modifications in preparation for the next version of the template.
 
 ## Usage
 
@@ -21,7 +21,7 @@ mobile app:create [NAME] [TEMPLATE]
 > If you omit `template` parameter, this template (`@titanium/template-alloy-default`) will be used.
 
 ```
-mobile app:create my-new-app @titanium/template-turbo-default
+mobile app:create my-new-app @titanium/template-turbo-next
 ```
 
 
@@ -40,6 +40,7 @@ mobile app:create my-new-app @titanium/template-turbo-default
   * Added iOS bundle url types
   * Disabled Appc Analytics
   * ESLint - Code Linting
+  * Android theme - Added theme to start making default styles more cross-platform
   
 
 ## Roadmap
@@ -50,6 +51,7 @@ mobile app:create my-new-app @titanium/template-turbo-default
 
 * [Titanium Turbo](https://www.npmjs.com/package/@titanium/turbo) - fork of **`Titanium Alloy`** that adds some enhancements and customizations for rapid development.
 * [Geek Mobile Toolkit](https://www.npmjs.com/package/@geek/mobile) - Toolkit for creating, building, and managing mobile app projects.
+* [Titanium Turbo Template (Default)](https://www.npmjs.com/package/@titanium/template-turbo-default) - Template for default Turbo app.  Based on the basic Alloy Template + some extra goodies.
 * [Titanium Alloy Template (Basic)](https://www.npmjs.com/package/@titanium/template-alloy-basic) - Basic Alloy app.  What you get when creating new app project with Titanium CLI.
 * [Titanium Alloy Template (Default)](https://www.npmjs.com/package/@titanium/template-alloy-default) - Default Alloy app.  Based on the Basic Alloy Template + some extra goodies.
 
