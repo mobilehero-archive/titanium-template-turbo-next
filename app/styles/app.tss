@@ -41,4 +41,8 @@ overrode the settings with other TSS, XML, or JS settings:
 "Tab": {
 	"activeTitleColor": "#2e7df6",
 	"titleColor": "#a1a1a1"
-}
+},
+
+"TextField": {
+	"height": 40,
+},
