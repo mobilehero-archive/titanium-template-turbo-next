@@ -6,7 +6,7 @@
 
 ## Usage
 
-1. Install `[Geek Mobile Toolkit](https://www.npmjs.com/package/@geek/mobile)`
+1. Install [`Geek Mobile Toolkit`](https://www.npmjs.com/package/@geek/mobile)
 
 ```
 npm install -g @geek/mobile
