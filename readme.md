@@ -49,7 +49,7 @@ mobile app:create my-new-app @titanium/template-turbo-next
 
 ## Other Projects
 
-* [Titanium Turbo](https://www.npmjs.com/package/@titanium/turbo) - fork of **`Titanium Alloy`** that adds some enhancements and customizations for rapid development.
+* [Titanium Turbo](https://www.npmjs.com/package/@titanium/turbo) - Variation of **`Titanium Alloy`** that adds some enhancements and customizations for rapid development.
 * [Geek Mobile Toolkit](https://www.npmjs.com/package/@geek/mobile) - Toolkit for creating, building, and managing mobile app projects.
 * [Titanium Turbo Template (Default)](https://www.npmjs.com/package/@titanium/template-turbo-default) - Template for default Turbo app.  Based on the basic Alloy Template + some extra goodies.
 * [Titanium Alloy Template (Basic)](https://www.npmjs.com/package/@titanium/template-alloy-basic) - Basic Alloy app.  What you get when creating new app project with Titanium CLI.

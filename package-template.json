@@ -4,22 +4,32 @@
 	"description": "${description}",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "npm run build:ios && npm run build:android",
+		"build:ios": "ti build -p ios --build-only --log-level trace --ios-version 12.2",
+		"build:android": "ti build -p android --build-only --log-level trace"
 	},
+	"license": "${license}",
 	"dependencies": {},
 	"devDependencies": {
-		"lodash": "^4.17.11",
-		"@titanium/eslint-config": "0.0.4",
-		"@titanium/plugin-turbo": "^1.0.2",
+		"lodash": ">=4.17.12",
+		"@titanium/eslint-config": "^0.0.9",
+		"@titanium/plugin-turbo": "^1.0.3",
 		"@titanium/turbo": "latest",
 		"eslint": "^5.16.0"
 	},
-	"keywords": [
-		"titanium",
-		"mobile",
-		"alloy",
-		"turbo"
-	],
-	"author": "${publisher}",
-	"license": "MIT"
+	"author": {
+		"name": "${author_name}",
+		"email": "${author_email}",
+		"url": "${author_url}"
+	},
+	"repository": {
+		"type": "${repo_name}",
+		"url": "${repo_url}"
+	},
+	"bugs": {
+		"url": "${bugs_url}",
+		"email": "${bugs_email}"
+	},
+	"keywords": ["titanium", "mobile", "alloy", "turbo", "appcelerator", "axway", "amplify"]
 }
