@@ -24,7 +24,7 @@
 		"url": "${author_url}"
 	},
 	"repository": {
-		"type": "${repo_name}",
+		"type": "${repo_type}",
 		"url": "${repo_url}"
 	},
 	"bugs": {
