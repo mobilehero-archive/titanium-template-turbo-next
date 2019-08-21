@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
+		"prebuild": "ti sdk install",	
 		"build": "npm run build:ios && npm run build:android",
 		"build:ios": "ti build -p ios --build-only --log-level trace --ios-version 12.2",
 		"build:android": "ti build -p android --build-only --log-level trace"
@@ -14,9 +15,10 @@
 	"devDependencies": {
 		"lodash": ">=4.17.12",
 		"@titanium/eslint-config": "^0.0.9",
-		"@titanium/plugin-turbo": "^1.0.3",
+		"@titanium/plugin-turbo": "^1.0.4",
 		"@titanium/turbo": "latest",
-		"eslint": "^5.16.0"
+		"eslint": "^6.2.1",
+		"titanium": "^5.2.1"		
 	},
 	"author": {
 		"name": "${author_name}",
