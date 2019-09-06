@@ -13,11 +13,11 @@
 	"license": "${license}",
 	"dependencies": {},
 	"devDependencies": {
-		"lodash": ">=4.17.12",
+		"lodash": ">=4.17.15",
 		"@titanium/eslint-config": "^0.0.9",
 		"@titanium/plugin-turbo": "^1.0.4",
 		"@titanium/turbo": "latest",
-		"eslint": "^6.2.1",
+		"eslint": "^6.3.0",
 		"titanium": "^5.2.1"		
 	},
 	"author": {
