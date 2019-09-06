@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/template-turbo-next",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "Titanium Native Mobile Template - Turbo Next -- Testing features for the next version of Titanium Turbo template",
 	"main": "index.js",
 	"scripts": {
@@ -21,7 +21,7 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"@titanium/eslint-config": "0.0.9",
+		"@titanium/eslint-config": "0.0.10",
 		"eslint": "^6.3.0"
 	},
 	"dependencies": {},
