@@ -22,7 +22,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@titanium/eslint-config": "0.0.9",
-		"eslint": "^6.2.1"
+		"eslint": "^6.3.0"
 	},
 	"dependencies": {},
 	"keywords": [
