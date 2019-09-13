@@ -38,7 +38,7 @@
 				<key>NSCameraUsageDescription</key>
 				<string>Can we use your camera?</string>
 				<key>NSPhotoLibraryUsageDescription</key>
-				<string>Can we save to your library?</string>
+				<string>Can we save to your photo library?</string>
 				<key>NSMicrophoneUsageDescription</key>
 				<string>Can we use your microphone?</string>
 				<key>NSAppleMusicUsageDescription</key>
@@ -54,6 +54,15 @@
 				<key>UIStatusBarStyle</key>
 				<string>UIStatusBarStyleDefault</string>
 				<key>LSApplicationQueriesSchemes</key>
+				<!-- Used for Silent Pushes and Remote Push Notifications -->
+				<!-- Note: The aps-development (development / production) is injected by the CLI based on your deploy type :-) -->
+				<key>UIBackgroundModes</key>
+				<array>
+					<!-- Without this one, you are not allowed to perform tasks in the "silentpush" event -->
+					<string>fetch</string>
+					<!-- Without this one, you cannot receive a device token -->
+					<string>remote-notification</string>
+				</array>
 				<array>
 					<string>fb</string>
 					<string>fbapi</string>
@@ -82,6 +91,14 @@
 				</array>
 			</dict>
 		</plist>
+		<entitlements>
+			<dict>
+				<key>com.apple.developer.applesignin</key>
+				<array>
+					<string>Default</string>
+				</array>
+			</dict>
+		</entitlements>
 	</ios>
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
 		<manifest xmlns:android="http://schemas.android.com/apk/res/android"
