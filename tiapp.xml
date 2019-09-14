@@ -53,7 +53,6 @@
 				<false />
 				<key>UIStatusBarStyle</key>
 				<string>UIStatusBarStyleDefault</string>
-				<key>LSApplicationQueriesSchemes</key>
 				<!-- Used for Silent Pushes and Remote Push Notifications -->
 				<!-- Note: The aps-development (development / production) is injected by the CLI based on your deploy type :-) -->
 				<key>UIBackgroundModes</key>
@@ -63,6 +62,7 @@
 					<!-- Without this one, you cannot receive a device token -->
 					<string>remote-notification</string>
 				</array>
+				<key>LSApplicationQueriesSchemes</key>
 				<array>
 					<string>fb</string>
 					<string>fbapi</string>
