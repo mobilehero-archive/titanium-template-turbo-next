@@ -7,7 +7,7 @@
 
 # Titanium Turbo Template (Next)
 
-![https://www.npmjs.com/package/@titanium/template-turbo-next](https://img.shields.io/npm/v/@titanium/template-turbo-next.png)
+[![@titanium/template-turbo-next](https://img.shields.io/npm/v/@titanium/template-turbo-next.png)](https://www.npmjs.com/package/@titanium/template-turbo-next)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=brentonhouse/titanium-template-turbo-next)](https://dependabot.com)
 
 > This template is based on the template @titanium/template-turbo-default with some modifications in preparation for the next version of the template.
