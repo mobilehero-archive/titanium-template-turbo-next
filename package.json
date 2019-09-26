@@ -1,11 +1,12 @@
 {
 	"name": "@titanium/template-turbo-next",
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"description": "Titanium Native Mobile Template - Turbo Next -- Testing features for the next version of Titanium Turbo template",
 	"main": "index.js",
 	"scripts": {
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"test": "npm install --ignore-scripts && npm run list-files"
+		"test": "npm install --ignore-scripts && npm run list-files",
+		"prepublishOnly": "bump"
 	},
 	"repository": {
 		"type": "git",
