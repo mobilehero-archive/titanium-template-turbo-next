@@ -6,7 +6,7 @@
 	"scripts": {
 		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
 		"test": "npm install --ignore-scripts && npm run list-files",
-		"prepublishOnly": "bump"
+		"prepublishOnly": "git pull && bump"
 	},
 	"repository": {
 		"type": "git",
