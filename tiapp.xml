@@ -12,13 +12,16 @@
 	<navbar-hidden>false</navbar-hidden>
 	<analytics>false</analytics>
 	<guid>${guid}</guid>
-	<property name="ti.ui.defaultunit"
-			  type="string">dp</property>
-	<property name="run-on-main-thread"
-			  type="bool">true</property>
+	<property name="ti.ui.defaultunit" type="string">dp</property>
+	<property name="run-on-main-thread" type="bool">true</property>
 	<ios>
+		<min-ios-ver>11.0</min-ios-ver>
 		<enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
 		<use-app-thinning>true</use-app-thinning>
+		<!-- Set backgroundColor for builtin storyboard and/or root view controller -->
+		<default-background-color>#ffffff</default-background-color>
+		<!-- Enable to support iPad Split View and Slide Over -->
+		<use-autolayout>false</use-autolayout>
 		<plist>
 			<dict>
 				<key>UISupportedInterfaceOrientations~iphone</key>
@@ -35,14 +38,46 @@
 					<string>UIInterfaceOrientationLandscapeLeft</string>
 					<string>UIInterfaceOrientationLandscapeRight</string>
 				</array>
-				<key>NSCameraUsageDescription</key>
-				<string>Can we use your camera?</string>
-				<key>NSPhotoLibraryUsageDescription</key>
-				<string>Can we save to your photo library?</string>
-				<key>NSMicrophoneUsageDescription</key>
-				<string>Can we use your microphone?</string>
+				<!-- Dark Mode: Automatic, Light, or Dark -->
+				<key>UIUserInterfaceStyle</key>
+				<string>Automatic</string>
+				<!-- Update status bar based on style preference -->
+				<key>UIViewControllerBasedStatusBarAppearance</key>
+				<true />
+				<key>ITSAppUsesNonExemptEncryption</key>
+				<false />
 				<key>NSAppleMusicUsageDescription</key>
 				<string>Can we use your music library?</string>
+				<key>NSBluetoothPeripheralUsageDescription</key>
+				<string>Can we use your bluetooth?</string>
+				<key>NSCalendarsUsageDescription</key>
+				<string>Can we use your calendar?</string>
+				<key>NSCameraUsageDescription</key>
+				<string>Can we use your camera?</string>
+				<key>NSContactsUsageDescription</key>
+				<string>Can we use to your contacts?</string>
+				<key>NSFaceIDUsageDescription</key>
+				<string>Can we use FaceID to authenticate you?</string>
+				<key>NSHealthShareUsageDescription</key>
+				<string>Can we use to your health information?</string>
+				<key>NSHealthUpdateUsageDescription</key>
+				<string>Can we use to your health information?</string>
+				<key>NSLocationWhenInUseUsageDescription</key>
+				<string>Can we use your location while using the app?</string>
+				<key>NSLocationAlwaysUsageDescription</key> -->
+				<string>Can we use your location (always)?</string>
+				<key>NSMicrophoneUsageDescription</key>
+				<string>Can we use your microphone?</string>
+				<key>NSMotionUsageDescription</key>
+				<string>Can we use your motion tracking hardware?</string>
+				<key>NSPhotoLibraryAddUsageDescription</key>
+				<string>Can we save to your photo library?</string>
+				<key>NSPhotoLibraryUsageDescription</key>
+				<string>Can we access your photo library?</string>
+				<key>NSRemindersUsageDescription</key>
+				<string>Can we have access to your reminders?</string>
+				<key>NSSpeechRecognitionUsageDescription</key>
+				<string>Can we have access to speech recognition?</string>
 				<key>ITSAppUsesNonExemptEncryption</key>
 				<false />
 				<key>UIRequiresPersistentWiFi</key>
@@ -95,20 +130,23 @@
 			<dict>
 				<!-- Make sure that your Apple App ID and Provisioning Profile 
 				are setup on https://developer.apple.com -->
-				<key>com.apple.developer.applesignin</key>
+				<!-- <key>com.apple.developer.applesignin</key>
 				<array>
 					<string>Default</string>
-				</array>
+				</array> -->
 				<!-- <key>com.apple.developer.associated-domains</key>
 				<array>
 					<string>applinks:my-domain-name.com</string>
 				</array> -->
+				<!-- <key>keychain-access-groups</key>
+				<array>
+					<string>$(AppIdentifierPrefix).${id}</string>
+				</array>				 -->
 			</dict>
 		</entitlements>
 	</ios>
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
-		<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-				  android:versionCode="1">
+		<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="100000000" >
 			<application android:debuggable="true"
 						 android:icon="@drawable/appicon"
 						 android:label="${name}"
@@ -117,6 +155,9 @@
 						 android:theme="@style/turbo_theme">
 			</application>
 			<uses-permission android:name="android.permission.VIBRATE" />
+			<uses-permission android:name="android.permission.CAMERA" />
+			<uses-feature android:name="android.hardware.camera" />
+			<uses-permission android:name="android.permission.RECORD_AUDIO" />
 		</manifest>
 	</android>
 	<modules></modules>
@@ -125,7 +166,7 @@
 		<target device="ipad">true</target>
 		<target device="iphone">true</target>
 	</deployment-targets>
-	<sdk-version>8.2.0.GA</sdk-version>
+	<sdk-version>8.3.1.GA</sdk-version>
 	<plugins>
 		<plugin version="1.0">ti.alloy</plugin>
 		<plugin version="1.0">turbo</plugin>
