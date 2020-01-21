@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/template-turbo-next",
-	"version": "0.0.16",
+	"version": "0.0.17",
 	"description": "Titanium Native Mobile Template - Turbo Next -- Testing features for the next version of Titanium Turbo template",
 	"main": "index.js",
 	"scripts": {
