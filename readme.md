@@ -7,28 +7,22 @@
 
 ## Usage
 
-1. Install [`Geek Mobile Toolkit`](https://www.npmjs.com/package/@geek/mobile)
+### Create new mobile project
 
 ```
-npm install -g @geek/mobile
+npx @geek/mobile app:create [NAME] [TEMPLATE]
 ```
 
-2. Create new mobile project
+#### *Example*
 
 ```
-mobile app:create [NAME] [TEMPLATE]
-```
-
-> If you omit `template` parameter, this template (`@titanium/template-alloy-default`) will be used.
-
-```
-mobile app:create my-new-app @titanium/template-turbo-next
+npx @geek/mobile app:create my-new-app @titanium/template-turbo-next
 ```
 
 
 ## Current Features
 
-* Titanium SDK 8.0.1.GA
+* Titanium SDK 9.0.0.GA
 * Updated .gitignore file
 * Modifications to `tiapp.xml`:
   * Added the following iOS permissions:
@@ -52,7 +46,8 @@ mobile app:create my-new-app @titanium/template-turbo-next
 
 * [Titanium Turbo](https://www.npmjs.com/package/@titanium/turbo) - Variation of **`Titanium Alloy`** that adds some enhancements and customizations for rapid development.
 * [Geek Mobile Toolkit](https://www.npmjs.com/package/@geek/mobile) - Toolkit for creating, building, and managing mobile app projects.
-* [Titanium Turbo Template (Default)](https://www.npmjs.com/package/@titanium/template-turbo-default) - Template for default Turbo app.  Based on the basic Alloy Template + some extra goodies.
+* [Titanium Turbo Template (Default)](https://www.npmjs.com/package/@titanium/template-turbo-default) - Template for default Titanium Turbo app.  Based on the basic Alloy Template + some extra goodies.
+* [Titanium Turbo Template (Fully Loaded)](https://www.npmjs.com/package/@titanium/template-turbo-fully-loaded) - Template for Titanium Turbo app with all the bells and whistles.
 * [Titanium Alloy Template (Basic)](https://www.npmjs.com/package/@titanium/template-alloy-basic) - Basic Alloy app.  What you get when creating new app project with Titanium CLI.
 * [Titanium Alloy Template (Default)](https://www.npmjs.com/package/@titanium/template-alloy-default) - Default Alloy app.  Based on the Basic Alloy Template + some extra goodies.
 
