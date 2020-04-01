@@ -14,10 +14,19 @@
 	<guid>${guid}</guid>
 	<property name="ti.ui.defaultunit" type="string">dp</property>
 	<property name="run-on-main-thread" type="bool">true</property>
+	 <!-- special property to increase the security of your application by preventing  debugging applications from connecting to your mobile app. -->
+	<property name="appc-security-debugger-detect">false</property>
+	<!-- special property to increase the security of your application by preventing the mobile app from running on a Jailbroken (iOS) or rooted (Android) device. -->
+	<property name="appc-security-jailbreak-detect">false</property>
+	<!-- special property appc-sourcecode-encryption-policy determines the encryption policy for assets.  values can be remote (default) or embed -->
+	<property name="appc-sourcecode-encryption-policy">remote</property>
+	<!-- Allow or disallow custom iOS 8+ keyboard extensions. By default, custom keyboard extensions are allowed. Add this property and set it to false to disallow custom keyboard extensions. -->
+	<property name="allow-custom-keyboards" type="bool">true</property>
 	<ios>
 		<min-ios-ver>11.0</min-ios-ver>
 		<enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
 		<use-app-thinning>true</use-app-thinning>
+		<use-jscore-framework>true</use-jscore-framework>
 		<!-- Set backgroundColor for builtin storyboard and/or root view controller -->
 		<default-background-color>#ffffff</default-background-color>
 		<!-- Enable to support iPad Split View and Slide Over -->
@@ -166,7 +175,7 @@
 		<target device="ipad">true</target>
 		<target device="iphone">true</target>
 	</deployment-targets>
-	<sdk-version>8.3.1.GA</sdk-version>
+	<sdk-version>9.0.0.GA</sdk-version>
 	<plugins>
 		<plugin version="1.0">ti.alloy</plugin>
 		<plugin version="1.0">turbo</plugin>
