@@ -16,7 +16,8 @@
 	"dependencies": {
 		"@titanium/bluebird": "3.7.2",
 		"@titanium/polyfill": "0.0.3",
-		"@titanium/errors": "0.0.1"
+		"@titanium/errors": "0.0.1",
+		"@geek/logger": "^1.0.2"		
 		
 	},
 	"devDependencies": {

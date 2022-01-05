@@ -1,11 +1,12 @@
 {
 	"name": "@titanium/template-turbo-next",
-	"version": "0.0.20",
-	"description": "Titanium Native Mobile Template - Turbo Next -- Testing features for the next version of Titanium Turbo template",
+	"version": "1.0.1",
+	"description": "Axway Amplify Template for creating awesome next-generation apps with Appcelerator Titanium SDK",
 	"main": "index.js",
 	"scripts": {
 		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"test": "npm install --ignore-scripts && npm run list"
+		"test": "npm install --ignore-scripts && npm run list",
+		"prepublishOnly": "git pull && bump insane"
 	},
 	"repository": {
 		"type": "git",
@@ -15,6 +16,7 @@
 		"url": "https://github.com/brentonhouse/titanium-template-turbo-next/issues",
 		"email": "brenton.house@gmail.com"
 	},
+	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"author": {
 		"name": "Brenton House",
 		"email": "brenton.house@gmail.com",
@@ -22,8 +24,11 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"@titanium/eslint-config": "0.0.11",
-		"eslint": "^6.8.0"
+		"@titanium/eslint-config": "0.0.17",
+		"eslint": "^7.10.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsdoc": "^30.6.3",
+		"eslint-plugin-promise": "^4.2.1"
 	},
 	"dependencies": {},
 	"keywords": [
@@ -33,8 +38,17 @@
 		"turbo",
 		"appcelerator",
 		"axway",
+		"template",
 		"amplify",
-		"brenton-house",
-		"template"
+		"plugin",
+		"amplify",
+		"api-builder",
+		"appcelerator-titanium",
+		"titanium-sdk",
+		"titanium-mobile",
+		"titanium-module",
+		"axway-sdk",
+		"axway-amplify",
+		"brenton-house"
 	]
 }
