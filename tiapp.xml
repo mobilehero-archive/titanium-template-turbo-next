@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
 	<id>${id}</id>
 	<name>${name}</name>
-	<version>1.0.18</version>
+	<version>1.0.19</version>
 	<publisher>${publisher}</publisher>
 	<url>${url}</url>
 	<description>${description}</description>
@@ -155,7 +155,7 @@
 		</entitlements>
 	</ios>
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
-		<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="100018000" >
+		<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="100019000" >
 			<application android:debuggable="true"
 						 android:icon="@drawable/appicon"
 						 android:label="${name}"
