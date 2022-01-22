@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/template-turbo-next",
-	"version": "1.0.28",
+	"version": "1.0.29",
 	"description": "⭐  Axway Amplify Template for creating awesome next-generation apps with Appcelerator Titanium SDK",
 	"main": "index.js",
 	"scripts": {
@@ -44,7 +44,7 @@
 		"@geek/spawn": "^1.0.2",
 		"@geek/spinner": "^1.0.2",
 		"@geek/tld": "^2.0.1-1",
-		"@nativeloop/mobile": "^1.0.28",
+		"@nativeloop/mobile": "^1.0.29",
 		"@titanium/appcelerator": "^6.0.27",
 		"@titanium/authentication": "^1.0.40",
 		"@titanium/authentication-mock": "^1.0.23",
@@ -58,14 +58,14 @@
 		"@titanium/json5": "^1.0.25",
 		"@titanium/jsonc": "^1.0.26",
 		"@titanium/jwt": "^1.0.31",
-		"@titanium/module-copier": "^1.0.36",
-		"@titanium/please": "^1.0.37",
+		"@titanium/module-copier": "^1.0.37",
+		"@titanium/please": "^1.0.38",
 		"@titanium/polyfill": "^1.0.37",
 		"@titanium/querystring": "^1.0.27",
 		"@titanium/tiapp-xml": "^1.0.38",
-		"@titanium/titanium": "^5.4.33",
+		"@titanium/titanium": "^5.4.34",
 		"@titanium/turbo": "^2.2.54",
-		"nativeloop": "^1.0.23",
+		"nativeloop": "^1.0.24",
 		"tiapp-dir": "^1.0.28"
 	},
 	"keywords": [
